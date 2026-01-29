@@ -1,0 +1,13 @@
+##Problem
+Find the length of the longest substring without repeating characters.
+
+##Approach
+I used a sliding window technique.
+I keep two pointers to represent the current substring.
+If a character repeats, I move the left pointer forward to remove the duplicate.
+I track the maximum window size during the process.
+
+
+##Complexity
+Time Complexity: O(n)
+Space Complexity: O(n)
