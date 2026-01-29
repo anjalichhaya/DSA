@@ -1,0 +1,15 @@
+##Problem
+Given an array of integers 'nums' and an integer 'target', find 'indices of two numbers' such that they add up to 'target'.
+
+##Approach
+I used hash map (unordered_map) for fast lookup.
+Iterate through the array using index 'i'.
+For each number 'nums[i]' , calculate 'need = target - nums[i]'.
+Check if 'need' already exists in the hash map:
+         if yes , then return [mp[need],i].
+         if no , then store the current number in the map with its index: mp[num[i]]=i.
+Continue this process until a pair is found.
+
+##Complexity
+Time Complexity:O(n)
+Space Complexity:O(n)
