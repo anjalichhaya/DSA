@@ -1,0 +1,13 @@
+# Problem
+Given an array of integers arr and an integer k, find the length of the longest continuous subarray whose sum is equal to k.
+
+# Process
+- I used prefix sum and a hash map.
+- Traverse the array and keep adding elements to prefixSum.
+- If prefixSum == k, update the maximum length.
+- if prefix - k, exists in the map , a subarray with sum k is found; update the length.
+- Store each prefixSum in the map only once to get the longest subarray.
+
+# Complexity
+-Time complexity:O(n)
+-Space complexity:O(n)

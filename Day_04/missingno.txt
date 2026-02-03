@@ -1,0 +1,14 @@
+# Problem
+Given an array of size n-1 containing distinct integers from 1 to n, one number is missing from the array.
+
+# Approach 
+-i used the XOR method to find the missing numbers efficiently.
+     Initialize a variable xor with 0.
+    XOR all numbers from 1 to n.
+    XOR all elements of the given array with xor.
+    Since XOR of the same number results in 0, all numbers present in both sequences cancel out.
+    The remaining value of xor is the missing number.
+
+# Complexity
+-Time complexity:O(n)
+Space complexity:O(10)
