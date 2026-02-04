@@ -1,0 +1,12 @@
+# Problem
+Given an integer array nums of size n and an integer k, rotate the array to the right by k steps.
+
+# Approach 
+- if k>n , reduce it using k=k%n
+- Reverse the entire array
+- Reverse the first k elements
+- Reverse the remaining n-k elements
+
+# Complexity
+-Time complexity:O(n)
+-Space complexity:O(1)
