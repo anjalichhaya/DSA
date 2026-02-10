@@ -1,0 +1,17 @@
+## Problem Statement
+You are given an array nums consisting of positive integers and an integer k.
+Your task is to find the length of the longest contiguous subarray whose sum is exactly equal to k.
+
+
+## Approach
+-Initialize two pointers l (left) and r (right) at index 0
+-Maintain a variable sum for the current window sum
+-Expand the window by moving r and add nums[r] to sum
+-If sum > k, shrink the window from the left until sum ≤ k
+-If sum == k, update the maximum subarray length
+-Continue until the end of the array
+
+
+## Complexity
+-Time Complexity: O(n)
+-Space Complexity: O(1)
